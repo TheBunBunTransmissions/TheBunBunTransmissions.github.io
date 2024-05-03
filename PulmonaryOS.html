@@ -1,0 +1,185 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale="1"> 
+    <title>Delayed Paragraph</title>  
+    <style> 
+        /* Optional: Add some styling */ 
+        p { 
+            display: block; /* Hide the paragraph by default */ 
+             position: absolute;
+             width: 100%;  
+             height: 100%;
+             
+        }  
+        body {
+   height: 100%;
+   overflow-y: hidden;
+} 
+    </style>  
+</head>   
+<body>  
+ <style type="text/css">
+    .nocursor { cursor:none; }
+</style>
+<!-- Your paragraph tag with an ID for easier selection --> 
+ <img src="https://files.catbox.moe/mu3ocv.gif" width="1470" height="740" id="myParagraph" class="nocursor">
+ 
+<script> 
+    // Select the paragraph element 
+    var myParagraph = document.getElementById('myParagraph'); 
+    function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+ 
+    // Use setTimeout to delay the display 
+    setTimeout(function() { 
+        // Change the display property to make the paragraph visible 
+        myParagraph.style.display = 'none'; // or 'inline', 'inline-block', depending on your layout 
+    }, 3000); // 3000 milliseconds = 3 seconds 
+</script> 
+ 
+</body> 
+</html> 
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#app {
+
+</style>
+</head>
+<body>
+
+
+
+<img src="txt file.png" title="alone.txt" onclick="myFunction()">
+
+<div id="app">
+<style>
+#txt {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
+
+#txtheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+}
+</style>
+
+
+
+ 
+
+
+<div id="txt">
+  <div id="txtheader"><table style="border-collapse: collapse; width: 100.4604%;" border="1">
+     <style>
+#grad1 {
+ 
+  background-color: Lightblue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, LightBlue,CornflowerBlue);
+}
+</style>
+
+<tr>
+<td style="width: 2; font-family:'Trebuchet MS';" id="grad1">alone.txt</td>
+</tr>
+
+</table></div>
+  
+<textarea rows="30" cols="60"> 
+ Is this any different from before?
+ Do I really have anyone to miss. 
+ Even if I did, would would anyone miss me? 
+</textarea> 
+
+</div>
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("txt"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+</div>
+
+
+
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("app");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<style>
+      body {
+         background-color: rgb(8,120,150);
+      }
+   </style>
+</body>
+  
+
+
+
+
+
+
+
