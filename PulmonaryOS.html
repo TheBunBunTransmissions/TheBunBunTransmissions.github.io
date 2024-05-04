@@ -1,6 +1,9 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&display=swap" rel="stylesheet">
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale="1"> 
     <title>Delayed Paragraph</title>  
@@ -16,6 +19,7 @@
         body {
    height: 100%;
    overflow-y: hidden;
+   font-family: "Jersey 10", serif;
 } 
     </style>  
 </head>   
@@ -58,7 +62,7 @@ function off() {
 
 
 
-<img src="txt file.png" title="alone.txt" onclick="myFunction()">
+<img src="txt file.png" width=50 title="alone.txt" onclick="myFunction()">
 
 <div id="app">
 <style>
@@ -71,7 +75,6 @@ function off() {
 }
 
 #txtheader {
-  padding: 10px;
   cursor: move;
   z-index: 10;
 }
@@ -83,17 +86,21 @@ function off() {
 
 
 <div id="txt">
-  <div id="txtheader"><table style="border-collapse: collapse; width: 100.4604%;" border="1">
+  <div id="txtheader"><table style=" width: 100%;" >
+ 
+  
      <style>
 #grad1 {
  
   background-color: Lightblue; /* For browsers that do not support gradients */
   background-image: linear-gradient(to bottom, LightBlue,CornflowerBlue);
+
 }
 </style>
 
+
 <tr>
-<td style="width: 2; font-family:'Trebuchet MS';" id="grad1">alone.txt</td>
+<td style="width: 100; font-family:'Trebuchet MS';" id="grad1">alone.txt</td>
 </tr>
 
 </table></div>
