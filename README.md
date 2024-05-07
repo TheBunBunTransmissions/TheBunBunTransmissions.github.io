@@ -3,3 +3,4 @@ Get ready for spookys
 ___
 our offical cringe post beta reader:
 <a href="https://toyhou.se/mawscanvas">MawsCanvas<a>
+<p>credits to jBox for the modal code</p>
