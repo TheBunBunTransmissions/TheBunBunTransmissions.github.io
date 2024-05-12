@@ -23,6 +23,8 @@
    font-family: "Jersey 10", serif;
 } 
     </style>  
+    <!--start of aplications-->
+ 
 </head>   
 <body>  
  <style type="text/css">
@@ -65,7 +67,7 @@ function off() {
 
 
 
-<img src="txt file.png" width=35 title="alone.txt" onclick="myFunction()">
+<img src="txt file.png" width=50 title="alone.txt" onclick="myFunction()">
 
 <div id="app">
 <style>
@@ -179,7 +181,140 @@ function myFunction() {
   }
 } 
 </script>
+ <!--bookmark start-->
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#bmark {
+
+</style>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&display=swap" rel="stylesheet">
+<body>
+
+<p><img src="bookmarklogo.png" width=50 title="Bookmark" onclick="bookmark()"> 
+</p>
+
+<div id="bmark">
+<style>
+#mark {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
+
+#markheader {
+  cursor: move;
+  z-index: 10;
+}
+</style>
+
+
+
+ 
+
+
+<div id="mark">
+  <div id="markheader"><table style=" width: 180%;" >
+ 
+  
+     <style>
+#grad1 {
+ 
+  background-color: Lightblue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom, LightBlue,CornflowerBlue);
+
+}
+</style>
+
+
+<tr>
+<td style="width: 100px ; font-family:'Jersey 10';" id="grad1">[BOOKMARK] www.LanskinTech.com</td>
+</tr>
+
+</table></div>
+  
+<iframe src="Laskin.html" width="180%" height="300" style="border:none;">
+</iframe>
+
+</div>
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("mark"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+</div>
+
+
+
+
+
+
+
+<script>
+function bookmark() {
+  var x = document.getElementById("bmark");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+  
+
+
+
 <!--cardo start-->
+
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -313,12 +448,6 @@ function funk() {
   }
 }
 </script>
-
-  
-
-
-
-
 
 
 
