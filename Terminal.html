@@ -32,7 +32,7 @@ input[type=submit] {
   <input type="submit" class="ex" value="Enter" style="color: #ffffff; font-family:  'Courier New', monospace;"/>
 </form>         
 <script type="text/javascript">
-        const command = ["!help", "!teacup", "!password","!laskin","!zachery","!blueroom","!crow"]
+        const command = ["!help", "!teacup", "!password","!laskin","!zachery","!blueroom","!crow","!juniper"]
 
 function validateForm() {
   const inputValue = document.forms["console"]["value"].value;
@@ -46,11 +46,13 @@ function validateForm() {
   } else if (inputValue === command[3]) {
     console.log("2007");
   } else if (inputValue === command[4]) {
-    console.log("Poor dude. He got the Brunt of the abuse. He was quite most of the time, but good company. Sometimes I miss our time together.");
+    console.log("Poor dude. He got the Brunt of it. He was quite most of the time, but good company. Sometimes I miss our time together.");
   } else if (inputValue === command[5]) {
     console.log("Its better if I stay in here. I'd do no good out there.");
   } else if (inputValue === command[6]) {
     console.log (window.location.href = "RUN.html");
+  } else if (inputValue === command[7]) {
+    console.log (window.location.href = "talk.html"); 
   } else {
     console.log("Invaild command")
   }
