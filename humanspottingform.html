@@ -1,6 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <style>
+      body {
+  font-family: Arial, sans-serif;
+}
+  </style>
+  <style>
+.button {
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.submit {
+  background-color: LightBlue; 
+  color: black; 
+  border: 3px solid HotPink;
+}
+
+.submit:hover {
+  background-color: Blue;
+  color: white;
+}
+
+.cancel {
+  background-color: LightPink; 
+  color: black; 
+  border: 3px solid Blue;
+}
+
+.cancel:hover {
+  background-color: HotPink;
+  color: white;
+}
+
+.home {
+  background-color: LightYellow; 
+  color: black; 
+  border: 3px solid Red;
+}
+
+.home:hover {
+  background-color: Gold;
+  color: white;
+}
+
+</style>
+      
   </head>
   <body>
    <center>  
@@ -184,13 +235,13 @@
 
       <div class="field is-grouped">
         <div class="control">
-          <button class="button is-primary" type="submit" id="submit-button">
+          <button class="submit" type="submit" id="submit-button">
             Submit
           </button>
         </div>
         <br>
         <div class="control">
-          <button class="button is-danger">Cancel</button>
+          <button class="cancel">Cancel</button>
         </div>
       </div>
     </form>
@@ -208,7 +259,7 @@
       "
     ></div>
     <br>
-    <a href= "main.html"><button>Return Home</button></a>
+    <a  href= "main.html"><button class="home">Return Home</button></a>
     
 </center> 
     <script>
@@ -272,11 +323,17 @@
       });
     </script>
     <style>
-    /* Colors */
 
     body {
         background-image: url('bunbunbackgrounnd.png')
     }
 </style>
+
+
+
+
+
+
+
   </body>
 </html>
