@@ -1,0 +1,48 @@
+{
+    "title": "Joy of scribles tie in radio",
+    "media": [
+        {
+            "file": "Sweet fingers intro.mp3",
+            "type": "audio",
+            "feature": true,
+            "title": "Sweet fingers (intro)"
+        },
+        {
+            "file": "angles island drummer.mp3",
+            "type": "audio",
+            "title": "Angels island drummers"
+        },
+        {
+            "file": "luxsury coupon$.mp3",
+            "type": "audio",
+            "title": "Luxury Coupon$"
+        },
+        {
+            "file": "cake tropicals.mp3",
+            "type": "audio",
+            "title": "Cake tropicals"
+        }
+    ],
+    "cover": "raidooo.png",
+    "theme": {
+        "titleStyle": "span",
+        "backgroundColor": "#fa00d9f4",
+        "primaryColor": "#91bdff8e",
+        "primaryAltColor": "#d29ef7",
+        "secondaryColor": "#ff24e2",
+        "highlightColor": "#a83e5c",
+        "primaryTextColor": "#8fffe9",
+        "primaryAltTextColor": "#d66fc2",
+        "previewStripeColor1": "#393f24",
+        "previewStripeColor2": "#2c1d19",
+        "linkColor": "#758323",
+        "layoutStyle": "horizontal",
+        "infoStyle": "overlaid",
+        "contentWidth": "398",
+        "coverSize": "480",
+        "nativePlayer": false,
+        "customCSS": "/* Colors */\nbody {\nbackground-image: url('https://i.imgur.com/sYILD7O.png')\n}"
+    },
+    "description": "",
+    "loopModeDefault": "playlist"
+}
